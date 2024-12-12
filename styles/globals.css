@@ -1,42 +1,228 @@
+/* Define the TestSöhne font family with all weights and styles */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-buch.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-buch-kursiv.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-dreiviertelfett.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-dreiviertelfett-kursiv.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-extrafett.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-extrafett-kursiv.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-fett.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-fett-kursiv.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-halbfett.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-halbfett-kursiv.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-kraftig.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-kraftig-kursiv.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-leicht.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TestSöhne';
+  src: url('/assets/fonts/test-soehne-leicht-kursiv.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --white: #ffffff;
+  --dark: #171717;
+  --grey: #6D6D6D;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: TestSöhne;
 }
-
-a {
-  color: inherit;
+a{
   text-decoration: none;
 }
+.text-center {
+  text-align: center;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.home {
+  padding: 2.5rem 0 2.5rem 2.5rem;
+}
+
+header {
+  margin-top: 8.125rem;
+  margin-bottom: 2.5rem;
+}
+
+header h3 {
+  font-size: 5.625rem;
+  font-weight: 700;
+  line-height: 119.34px;
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 31.82px;
+  color: var(--grey);
+}
+
+.slide-card {
+  border-radius: 4.438rem;
+  padding: 4.375rem;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.swiper-button-prev, .swiper-button-next{
+  color: var(--white);
+}
+.slide-card p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 42.43px;
+  color: var(--white);
+  margin-top: 7px;
+}
+
+.badge {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 10px 2.5rem 10px 2.5rem;
+  gap: 10px;
+  border-radius: 2.5rem;
+  display: inline-block;
+}
+.card-detail img{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 5rem;
+  margin-top: 2.5rem;
+  height: auto;
+}
+.card-detail h1{
+  font-size: 2.813rem;
+  font-weight: 700;
+  line-height: 70px;
+  padding: 2.5rem 0;
+}
+.card-detail p{
+font-size: 2rem;
+font-weight: 500;
+line-height: 62px;
+}
+.container{
+  max-width: 1328px;
+  padding: 0 20px;
+  margin: 0px auto;
+}
+@media only screen and (max-width: 767px) {
+  .home {
+    padding: 1.25rem 0 1.25rem 1.25rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slide-card p {
+    font-size: 1rem;
+    line-height: 21.22px;
+  }
+  header h3{
+    font-size: 54px;
+    line-height: 71.6px;
+  }
+  header p {
+    font-size: 18px;
+    line-height: 23.87px;
+  }
+  header {
+    margin-top: 90px;
+  }
+  .slide-card{
+    padding: 2.5rem;
+  }
+  .card-detail img{
+    margin-bottom: 35px;
+    margin-top: 20px;
+  }
+  .card-detail h1{
+    font-size: 17px;
+    line-height: 25px;
+    padding: 15px 0;
+  }
+  .card-detail p{
+  font-size: 12px;
+  line-height: 23px;
   }
 }
