@@ -12,4 +12,5 @@ const Badge: React.FC<BadgeProps> = React.memo(({ text }) => {
   );
 });
 
+Badge.displayName = 'Badge';
 export default Badge;

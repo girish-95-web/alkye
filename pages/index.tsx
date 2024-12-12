@@ -84,7 +84,7 @@ export async function getServerSideProps() {
         data,
       },
     };
-  } catch (error) {
+  } catch{
     return { notFound: true };
   }
 }
